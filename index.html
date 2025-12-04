@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mastermind — Simple Web Version</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Mastermind</h1>
+
+    <section class="game-area">
+      <div id="board" class="board"></div>
+
+      <aside class="controls">
+        <div class="palette" id="palette"></div>
+
+        <div class="current">
+          <div id="current-row" class="current-row"></div>
+        </div>
+
+        <div class="actions">
+          <button id="submit-btn">Submit Guess</button>
+          <button id="clear-btn">Clear</button>
+          <button id="new-btn">New Game</button>
+        </div>
+
+        <div id="status" class="status"></div>
+        <div class="rules">
+          <strong>Rules:</strong> Guess the 4-colour code. Feedback: black = correct position, white = correct colour wrong position. Max 10 tries.
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
